@@ -19,6 +19,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import utils.configReader;
+import utils.jsonUtils;
 
 public class GetAllProducts_steps {
 	private Response response;
@@ -51,10 +52,10 @@ public void the_response_should_match_to_response_code(String exp_statusCode ) {
 public void the_response_should_match_the_expected_products_from(String FileName) throws IOException {
     // Write code here that turns the phrase above into concrete actions
     //throw new io.cucumber.java.PendingException();
-	 JsonNode expectedJson = mapper.readTree(new File("./src/test/resources/testData/"+FileName));
+	 JsonNode expectedJson = jsonUtils.fileToNodeConverter(new File(configReader.getProperty("testDataPath")+"/"+FileName));
 
      // Load actual response JSON
-     JsonNode actualJson = mapper.readTree(response.asString());
+     JsonNode actualJson = jsonUtils.stringToNodeConverter(response.asString());
 
      // Compare
      Assert.assertEquals(expectedJson, actualJson,"Actual response does not match expected JSON");
