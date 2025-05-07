@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 05 22:53:33 IST 2025</td>
+<td>Started on:</td><td>Wed May 07 18:25:47 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3735 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5604 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,32 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate post product api adds a product", "post a product"</td>
-<td><div><pre>java.lang.AssertionError: Assertion fail - product not added properly: Iterators differ at element [4]: &quot;https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg&quot; != &quot;women&apos;s clothing&quot; expected [&quot;https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg&quot;] but found [&quot;women&apos;s clothing&quot;]
-	at stepDefinitions.postProduct_steps.response_should_matches_the_expected_product_from(postProduct_steps.java:50)
-	at ✽.response should matches the expected product from &quot;newProduct.json&quot;(file:///C:/Users/Shreeharsh/git/repository/FakeStoreAPI/src/test/resources/features/postProduct.feature:7)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198785987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace198785987'><pre>java.lang.AssertionError: Assertion fail - product not added properly: Iterators differ at element [4]: &quot;https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg&quot; != &quot;women&apos;s clothing&quot; expected [&quot;https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg&quot;] but found [&quot;women&apos;s clothing&quot;]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:1690)
-	at org.testng.Assert.assertEquals(Assert.java:1742)
-	at stepDefinitions.postProduct_steps.response_should_matches_the_expected_product_from(postProduct_steps.java:50)
-	at ✽.response should matches the expected product from &quot;newProduct.json&quot;(file:///C:/Users/Shreeharsh/git/repository/FakeStoreAPI/src/test/resources/features/postProduct.feature:7)
-</pre></div></td>
-<td>0</td>
-<td>testRunner.TestRunner@3feb2dda</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -101,6 +75,16 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate product get API returns  appropate", "Get Product by Id"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@3feb2dda</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate post product api adds a product", "post a product"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@3feb2dda</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate product getAPI returns  all products", "Get All Products"</td>
 <td></td>
