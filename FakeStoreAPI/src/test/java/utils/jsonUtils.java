@@ -19,9 +19,9 @@ public static JsonNode stringToNodeConverter(String str) throws IOException {
 	return JNode;
 	
 }
-//public static String jsonToString(JsonNode js) {
-//	String expectedJson = new String(Files.readAllBytes(Paths.get(filePath)));
-//	return null;
-//	
-//}
+public static ObjectMapper getMapper() {
+	return mapper;
+}
+
+
 }
